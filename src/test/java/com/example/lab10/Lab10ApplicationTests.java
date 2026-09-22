@@ -69,8 +69,8 @@ class Lab10ApplicationTests {
     void testSave() {
         // TODO: ทดสอบ save() บันทึกแล้วคืน Product
         // Hint: สร้าง Product ใหม่ → save → expectNext → verifyComplete
-        Product product = new Product("4", "Samsung Galaxy L100", "Electronics", "Samsung", 10, 299000.0, "SEASONAL");
-        StepVerifier.create(repository.save(product)).expectNextCount(3).verifyComplete();
+        Product product = new Product("4", "Light Saber", "Toys", "Starwar", 10, 100000.0, "SEASONAL");
+        StepVerifier.create(repository.save(product)).expectNextCount(1).verifyComplete();
     }
 
     @Test
